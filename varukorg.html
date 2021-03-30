@@ -173,70 +173,31 @@ fetch('https://webacademy.se/fakestore/')
 
 
   const generateHtml = (res) => {
-
-
     var totalpris = 0;
-
-
-
 var matte = 0;
  var founditem = false;
-
 let lastid = 0; 
-
-
           let amountcounter = 0;
- 
       var varuDiv = document.getElementById("currentkorg")
-      
-    
-
       res.forEach(res => {
-
-
-
         page2array.forEach(page2array => {
-
-
 if(page2array == res.id){
 totalpris += res.price;
   founditem = true;
-
   if(lastid == page2array){
-
 amountcounter++;
-
-
   }else {
  lastid = page2array;
  amountcounter++;
   }
-
-
-
-   
- 
-
 }
-
-
-
 if(!amountcounter == 0){
 matte = res.price * amountcounter;
-
 }else{
   matte = res.price;
 }
-
-
 })
-
-
         if(founditem){
-
-          
-
-
 varuDiv.innerHTML +=
 
         `
