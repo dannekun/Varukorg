@@ -22,7 +22,8 @@ fetch('https://webacademy.se/fakestore/')
           <img src = ${res[i].image} width="250">
           
           <p class="card-text">${res[i].description}</p>
-   <button id="buttonklick" value="${res[i].id}" type="button" onclick="addToCart(this.value)" class="btn btn-primary">Lägg till i varukorg</button>
+   <button id="buttonklick" value="${res[i].id}" type="button"
+    onclick="addToCart(this.value)" class="btn btn-primary">Lägg till i varukorg</button>
 
         </div>
       </div>

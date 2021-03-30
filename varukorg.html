@@ -325,11 +325,13 @@ var stad = document.getElementById("stadinput").value
 
 if(page2array.length == 0){
 alert("Varukorgen är tom")
-}else if(!first || !last ||  !number || !email  || !adress  || !postnummer|| !ort  || !stad ){
+}else if(!first || !last ||  !number || !email  || 
+!adress  || !postnummer|| !ort  || !stad ){
 alert("Fyll i alla fält")
 }else if(isNaN(postnummer)||isNaN(number)){
 alert("Skriv in ett nummer i postadress/telefonnummer")
-}else if(!isNaN(first)||!isNaN(last)||!isNaN(email)||!isNaN(adress)||!isNaN(ort)||!isNaN(stad)){
+}else if(!isNaN(first)||!isNaN(last)||!isNaN(email)||
+!isNaN(adress)||!isNaN(ort)||!isNaN(stad)){
   alert("Skriv in rätt information")
 }else{
   cleardata()
