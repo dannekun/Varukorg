@@ -358,16 +358,6 @@ document.getElementById("indexknapp").onclick=function(){
   window.location.href='index.html'
 }
 
-
-document.getElementById("clearbutton").onclick=function(){
-  cleardata()
-  localStorage.setItem('array1', JSON.stringify(page2array))
-  restartPage()
-}
-
-
-
-
 function cleardata(){
 page2array.splice(0, page2array.length);
 
