@@ -1,4 +1,4 @@
-fetch('http://webacademy.se/fakestore/')
+fetch('https://webacademy.se/fakestore/')
   .then(res => res.json())
   .then(json => generateHtml(json))
 
